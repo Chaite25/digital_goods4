@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="utf-8">
+<meta https-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ebay template</title>
+<!-- ======= google fonts ======= -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<!-- ======= css ======= -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<style type="text/css">
+/*  ================================
+global area start
+================================ */
+
+body {
+font-size: 14px;
+font-weight: 400;
+line-height: 1.6;
+font-family: 'Open Sans', sans-serif;
+color: #1a1a1a;
+}
+
+*,
+p {
+font-size: 14px;
+font-family: 'Open Sans', sans-serif;
+}
+
+a,
+a:hover,
+a:focus {
+outline: none;
+text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+a {
+margin: 0;
+padding: 0;
+line-height: 1.3;
+}
+
+.main-div {
+overflow: hidden;
+}
+
+img {
+max-width: 100%;
+max-height: 100%;
+}
+
+/*  ================================
+global area end
+================================ */
+
+/*  ================================
+header area start
+================================ */
+
+.header-wraper {
+overflow: hidden;
+}
+
+.menu-part {
+text-align: right;
+padding: 51px 0;
+}
+
+.menu-part ul {
+display: inline-block;
+padding: 0;
+}
+
+.menu-part ul li {
+display: inline-block;
+list-style: outside none none;
+}
+
+.menu-part ul li a {
+color: #1a1a1a;
+display: block;
+font-size: 22px;
+text-decoration: none;
+text-transform: capitalize;
+transition: all 0.5s ease 0s;
+font-family: 'Open Sans', sans-serif;
+border-bottom: 2px solid #fff;
+padding: 0 10px;
+font-weight: 800;
+}
+
+.menu-part ul li:last-child a {
+margin-right: 0;
+}
+
+/* menu part end */
+.logo img,
+.footer-logo img {
+width: 300px;
+}
+
+/*  ================================
+header area end
+================================ */
+
+/*  ================================
+product title area start
+================================ */
+
+.pro-title {
+background-color: #000;
+border-radius: 5px;
+padding: 15px 30px;
+text-align: center;
+margin: 0 0 30px;
+}
+
+.pro-title>h2 {
+font-size: 24px;
+margin: 0;
+font-family: 'Open Sans', sans-serif;
+font-weight: 700;
+color: #fff;
+}
+
+/*  ================================
+product title area end
+================================ */
+
+/*  ================================
+product area start
+================================ */
+
+.product-wraper {
+border: 1px solid #D1D1D1;
+overflow: hidden;
+padding: 0 20px 30px;
+}
+
+.gallery-content {
+text-align: center;
+margin-top: 30px;
+}
+
+.product-dec h3 {
+color: #1a1a1a;
+text-transform: capitalize;
+font-size: 20px;
+margin: 30px 0 20px;
+font-weight: 700;
+}
+
+.product-dec h4 {
+font-weight: 700;
+color: #1a1a1a;
+font-size: 20px;
+line-height: 1.3;
+margin-bottom: 20px;
+}
+
+.product-dec h5 {
+font-family: 'Open Sans', sans-serif;
+font-weight: 600;
+color: #1a1a1a;
+font-size: 16px;
+line-height: 1.3;
+margin-bottom: 5px;
+}
+
+.product-dec ul,
+.tab-list ul {
+margin: 0;
+padding: 0;
+}
+
+.product-dec ul li,
+.tab-list ul li {
+position: relative;
+padding-left: 20px;
+list-style: none;
+margin-bottom: 15px;
+}
+
+.product-dec ul li::before,
+.tab-list ul li::before {
+position: absolute;
+left: 0;
+content: "\f046";
+color: #000;
+font-family: fontawesome;
+font-weight: 400;
+}
+
+/*  ================================
+product area end
+================================ */
+
+/*  ================================
+tab area start
+================================ */
+
+.tab-part-area {
+padding: 50px 0 30px;
+}
+
+section.tab-section {
+display: none;
+padding: 40px 45px;
+border: 1px solid #ddd;
+color: #1a1a1a;
+overflow: hidden;
+}
+
+input {
+display: none;
+}
+
+label {
+color: #000;
+font-size: 16px;
+font-weight: 600;
+border: 1px solid transparent;
+display: inline-block;
+margin: 0 0 -1px;
+padding: 10px 30px;
+text-align: center;
+text-transform: uppercase;
+background-color: #F8F8FA;
+border: 1px solid #ddd;
+transition: 0.5s;
+}
+
+label:hover {
+cursor: pointer;
+color: #fff;
+border: 1px solid #000;
+background-color: #000;
+}
+
+input:checked+label {
+color: #fff;
+border: 1px solid #000;
+background-color: #000;
+}
+
+#tab1:checked~#content1,
+#tab2:checked~#content2,
+#tab3:checked~#content3,
+#tab4:checked~#content4,
+#tab5:checked~#content5 {
+display: block;
+}
+
+.tab-section p a {
+color: #000;
+font-weight: 600;
+text-decoration: underline;
+}
+
+/*  ================================
+tab area end
+================================ */
+
+/*  ================================
+footer area end
+================================ */
+
+.footer-area p {
+background-color: #000;
+padding: 20px 0;
+}
+
+.footer-area p,
+.footer-area p a {
+font-size: 16px;
+font-weight: 600;
+color: #fff;
+}
+
+.footer-area p a {
+color: #fff;
+}
+
+/*  ================================
+footer area end
+================================ */
+
+/***** medium Layout *****/
+
+@media (min-width: 992px) and (max-width: 1200px) {}
+
+/***** Tablet Layout *****/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+.logo,
+.menu-part {
+text-align: center;
+}
+
+.menu-part {
+padding: 0 0 30px;
+}
+}
+
+/***** Mobile Layout *****/
+
+@media only screen and (max-width: 767px) {
+
+*,
+p,
+.footer-area p,
+.footer-area p a {
+font-size: 17px;
+}
+
+.gallery-content {
+height: auto;
+}
+
+.logo {
+text-align: center;
+}
+
+.menu-part {
+text-align: left;
+padding-top: 0;
+padding-bottom: 20px;
+}
+
+.menu-part ul li {
+display: block;
+text-align: left;
+}
+
+.menu-part ul li a {
+font-size: 16px !important;
+padding: 0 0 10px;
+margin: 0;
+border-bottom: 0;
+}
+
+.pro-title>h2 {
+font-size: 18px;
+}
+
+.product-wraper {
+padding: 0 20px 30px;
+}
+
+.product-dec {
+margin-top: 30px;
+}
+
+.product-dec h3 {
+font-size: 18px;
+}
+
+.product-dec h4 {
+font-size: 16px;
+}
+
+.des-content {
+padding: 15px;
+}
+
+.des-content h1 {
+font-size: 16px;
+}
+
+.des-content h2 {
+font-size: 16px;
+}
+
+label {
+display: block;
+}
+
+section.tab-section {
+padding: 20px;
+}
+
+.ex {
+margin: 0;
+padding: 0;
+}
+}
+
+</style>
+
+</head>
+
+<body>
+<div class="main-div">
+<!-- ======= header area start ======= -->
+<header class="header-area">
+<div class="header-wraper">
+<div class="container">
+<div class="row">
+<!-- header wraper start -->
+<div class="col-md-3">
+<!-- logo start -->
+<div class="logo">
+<a href="https://www.ebay.de/usr/digital_goods4" target="_blank"><img src="logo.png" alt=""></a>
+</div>
+<!-- logo end -->
+</div>
+<div class="col-md-9">
+<!-- menu start -->
+<div class="menu-part">
+<nav>
+<ul>
+<li><a href="https://www.ebay.de/usr/digital_goods4" target="_blank">Produkte einkaufen</a></li>
+<li><a href="https://www.ebay.de/usr/digital_goods4" target="_blank">über uns</a></li>
+<li><a href="https://www.ebay.de/usr/digital_goods4#tab1" target="_blank">Rückmeldung</a></li>
+<li><a href="https://www.ebay.de/contact/sendmsg?message_type_id=14&recipient=adorablehampers" target="_blank">kontaktiere uns</a></li>
+</ul>
+</nav>
+</div>
+<!-- menu end -->
+</div>
+</div>
+<!-- header wraper end -->
+</div>
+</div>
+</header>
+<!-- ======= header area end ======= -->
+
+<!-- ======= product title area start ======= -->
+<section class="gallery-area">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<div class="pro-title">
+<h2>
+
+<!-- product title start -->
+
+GIN TONIC GINSPIRATION INFUSION KIT FEIER GEBURTSTAG GESCHENK GLÄSER GESCHENK
+
+<!-- product title end -->
+
+</h2>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ======= product title area end ======= -->
+
+<!-- ======= product images area start ======= -->
+<section class="product-area">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<!-- product wraper star -->
+<div class="product-wraper">
+<div class="col-md-6">
+<!-- images gallery part start -->
+<div class="row">
+<div class="col-md-12">
+<div class="gallery-content">
+
+<!--product image start -->
+
+<img src="https://i.ebayimg.com/images/g/hG8AAOSwN7Vi4S0q/s-l1600.jpg" alt="">
+
+<!--product image end -->
+
+</div>
+</div>
+</div>
+<!-- images gallery part end -->
+</div>
+<div class="col-md-6 ex">
+<div class="product-dec">
+
+<!-- product discription part start -->
+<h3>GIN TONIC GINSPIRATION INFUSION KIT ZEILE GEBURTSTAGSGESCHENK GLÄSER VORHANDEN </h3>
+<h3>(Inhalt des Geschenksets)</h3>
+<h4>1 x Gin-Spiration-Infusionsset</h4>
+<ul>
+<li>Infusionsset zur Herstellung Ihres eigenen aromatisierten Gins oder Wodkas mit Früchten oder Kräutern wie Holunderblüten. Mit diesem Set können Sie Ihre eigenen Zubereitungen aufgießen und kreieren</li>
+<li>1 Liter vollständig verschließbares Einmachglas</li>
+<li>Musselintuch und Trichter</li>
+<li>3 Servierflaschen und Etiketten – Geben Sie Ihre Kreationen mit einem handgeschriebenen Etikett und einer Nachricht an Freunde weiter</li>
+</ul>
+<h3>1 x Galway Living Gin Tonic Zitrone und Limette</h3>
+<p>Dieses Zitronen- und Limetten-Gin-Tonic-Set ist Teil einer zeitlosen und eleganten Galway Crystal Living-Reihe. Die Kombination von Stil, Qualität und Funktionalität mit einer sehr attraktiven Preisklasse. Diese zeitgemäße Serie zeichnet sich durch ihr müheloses Design aus, das das moderne Auge anspricht. Die Gläser zeigen eine breite Ballonform, die an traditioneller Gin-Barware erkennbar ist. Bei ihnen dreht sich alles um Spaß und sie wären perfekt als letzter Schliff auf einer Party. </p>
+<ul>
+<li>Wird als 2er-Set geliefert</li>
+<li>Ein Glas hat einen gelben Stiel und das andere einen grünen Stiel</li>
+<li>Wird in einer Galway-Geschenkbox geliefert</li>
+<li>Maße - 11 cm B x 23 cm H</li>
+</ul>
+<p><b>Bitte beachten Sie, dass alle in diesem Angebot enthaltenen Artikel zuvor an wohltätige Zwecke gespendet und zurückgekauft wurden.</b></p>
+<p><b>Jeden Kauf bei Adorable Hampers zu kaufen, ermöglicht es mir, Artikel weiterhin ethisch, nachhaltig und verantwortungsvoll zu beschaffen. Alle Käufer der aufgelisteten Produkte tragen zu verschiedenen Wohltätigkeitsorganisationen bei.</b></p>
+<!-- product discription part end -->
+
+</div>
+</div>
+</div>
+<!-- product wraper end -->
+</div>
+</div>
+</div>
+</section>
+<!-- ======= product images area end ======= -->
+
+<div class="tab-part-area">
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<div class="tab-area">
+<input id="tab1" name="tabs" checked="" type="radio">
+<label for="tab1">Versandbedingungen</label>
+<input id="tab2" name="tabs" type="radio">
+<label for="tab2">Zahlung</label>
+<input id="tab3" name="tabs" type="radio">
+<label for="tab3">kontaktiere uns</label>
+
+<!-- tab shipping start -->
+<section id="content1" class="tab-section">
+<div class="col-md-12">
+<div class="tab-list">
+<ul>
+<li><b>Wir versenden Ihren Artikel innerhalb von 1-3 Werktagen nach Zahlungseingang.</b></li>
+<li><b>Der Artikel wird mit Sendungsverfolgungsnummer versendet.</b></li>
+<li><b>Der Versandnachweis wird für spätere Referenzzwecke aufbewahrt</b></li>
+<li><b>Ihr Artikel wird ordnungsgemäß verpackt, um Schäden zu vermeiden</b></li>
+</ul>
+<p>Wenn Sie ein Problem mit der Bestellung haben, kontaktieren Sie uns zuerst per eBay-Nachricht. Wir werden das Problem so schnell wie möglich lösen.</p>
+</div>
+</div>
+</section>
+<!-- tab shipping end -->
+
+<!-- tab Payment start -->
+<section id="content2" class="tab-section">
+<div class="col-md-12">
+<div class="tab-list">
+<ul>
+<li><b>Alle gängigen Kreditkarten akzeptieren</b></li>
+</ul>
+<p>Fragen: Bitte senden Sie uns eine Nachricht, wenn Sie Fragen oder Bedenken haben.</p>
+</div>
+</div>
+</section>
+<!-- tab Payment end -->
+
+<!-- tab contact start -->
+<section id="content3" class="tab-section">
+<div class="col-md-12">
+<div class="tab-list">
+<p>Bitte zögern Sie nicht, uns zu kontaktieren, um alles zu besprechen, zu dem Sie eine Frage haben könnten.</p>
+<p>Kontaktieren Sie uns über das eBay-Nachrichtensystem <a href="https://www.ebay.de/contact/sendmsg?message_type_id=14&recipient=adorablehampers" target="_blank">hier.</a></p>
+</div>
+</div>
+</section>
+<!-- tab contact end -->
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ======= footer area star ======= -->
+<footer class="footer-area">
+<div class="container">
+<div class="row">
+<div class="col-md-12 text-center">
+<!-- logo start -->
+<div class="footer-logo">
+<a href="https://www.ebay.de/usr/digital_goods4" target="_blank"><img src="logo.png" alt=""></a>
+</div>
+<!-- logo end -->
+<p>© Copyright alle Rechte vorbehalten - <a href="https://www.ebay.de/usr/digital_goods4?_trksid=p2047675.l2559" target="_blank">digital_goods4</a></p>
+</div>
+</div>
+</div>
+</footer>
+<!-- ======= footer area end ======= -->
+</div>
+</body>
+
+</html>
